@@ -7,7 +7,7 @@ module.exports = {
 }
 
 function find(filter) {
-    return db('users').where({ filter });
+    return db('users').where(filter);
 }
 
 function create(user) {
