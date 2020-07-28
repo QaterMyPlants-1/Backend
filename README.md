@@ -15,9 +15,36 @@
 
 ## EndPoints
 
+## Plants
+
+**/api/plants- GET -** Retrieve all plants.
+
+
+**/api/plants - POST -** Add a plant.
+
+*What this endpoint requires:* `name` and `species`.
+
+
+**/api/plants/:id - PUT -** To edit plant.
+
+*What this endpoint requires:* `name` and `species`.
+
+**/api/plants/:id - DELETE -** To delete plant.
+
+## Users
+
+**/api/users/:id- GET -** Retrieve specified user.
+
+**/api/users/:id - PUT -** To edit user.
+
+*What this endpoint requires:* `username` and `password`.
+*You are also able to send a `phonenumber` to this endpoint, but this isn't required.*
+
+**/api/user/:id - DELETE -** To delete user.
+
 ## Deployment
 
-I will add the link for you guys to use whenever I deploy!
+https://watermyplants26.herokuapp.com/
 
 ## Built With
 
