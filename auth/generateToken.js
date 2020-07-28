@@ -1,10 +1,11 @@
 const jwt = require('jsonwebtoken');
+const jwtSecret = require('../secrets/authSecret');
 
 function generateToken(user) {
     const payload = {
         subject: user,
     };
-    const secret = process.env.JWT_SECRET || 'Secret formula';
+    const secret = jwtSecret;
     const options = {
         expiresIn: '1d'
     }
