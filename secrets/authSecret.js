@@ -1,3 +1,3 @@
-module.exports = {
-    jwtSecret: process.env.JWT_SECRET || 'Secret formula',
-}
+const jwtSecret = 'Secret formula'; 
+
+module.exports = jwtSecret;

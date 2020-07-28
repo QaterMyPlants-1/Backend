@@ -5,7 +5,7 @@ function generateToken(user) {
     const payload = {
         subject: user,
     };
-    const secret = jwtSecret;
+    const secret = jwtSecret ;
     const options = {
         expiresIn: '1d'
     }
