@@ -51,7 +51,7 @@ router.delete('/:id', (req, res) => {
     .catch(error => {
         res.status(500).json({ message: 'Error deleting plant.', error })
     });
-})
+});
 
 
 module.exports = router;
