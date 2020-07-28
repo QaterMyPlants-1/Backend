@@ -27,4 +27,4 @@ I will add the link for you guys to use whenever I deploy!
 
 # Authors
 
-* **Anthony** - *API* - [GitHub](https://github.com/anthony2698)
+* **Anthony Carrillo** - *API* - [GitHub](https://github.com/anthony2698)
