@@ -19,11 +19,12 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     const plant = req.body;
-    Plants.create({...plant, user_id: req.decodedToken.subject.id })
+    Plants.create({ ...plant, user_id: req.decodedToken.subject.id })
         .then(response => {
             res.status(200).json(response);
         })
         .catch(error => {
+            console.log(error);
             res.status(500).json({ message: 'Error connecting to database ', error });
         }); 
 });
