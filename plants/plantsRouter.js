@@ -8,7 +8,7 @@ const router = express.Router();
 router.use(authentication);
 
 router.get('/', (req, res) => {
-    Plants.findAll()
+    Plants.findByUserId(req.decodedToken.subject.id)
         .then(response => {
             res.status(200).json(response);
         })
@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     const plant = req.body;
-    Plants.create({ ...plant, user_id: req.decodedToken.subject.id })
+    Plants.create({ ...plant, "user_id": req.decodedToken.subject.id })
         .then(response => {
             res.status(200).json(response);
         })

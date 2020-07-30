@@ -3,7 +3,6 @@ const bcrypt = require('bcryptjs');
 
 const Users = require('./authModel');
 const validateUser = require('./validateUser');
-const authentication = require('./authenticationMiddleware');
 const generateToken = require('./generateToken');
 
 const router = express.Router();
