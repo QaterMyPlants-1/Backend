@@ -2,7 +2,7 @@ const db = require('../data/dbConfig');
 
 module.exports = {
     findAll,
-    findById,
+    findByUserId,
     create,
     remove,
     update
@@ -10,6 +10,10 @@ module.exports = {
 
 function findAll() {
     return db('plants');
+}
+
+function findByUserId(id) {
+    return db('plants').where({ "user_id": id });
 }
 
 function findById(id) {
