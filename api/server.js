@@ -19,7 +19,7 @@ server.use('/api/plants', plantsRouter);
 server.use('/api/users', userRouter);
 
 server.get('/', (req, res) => {
-    res.status(200).json({ API: 'Running... '});
+    res.status(200).json({ API: 'Running... ' });
 });
 
 module.exports = server;
